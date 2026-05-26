@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+gateway:
+  routes:
+    auth-service: http://auth-service:8081
+    expense-service: http://expense-service:8082
+    budget-service: http://budget-service:8083
+    analytics-service: http://analytics-service:8084
